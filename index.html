@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Ready Tours — Curated Holiday Packages & Outstation Cabs</title>
+<meta name="description" content="Explore customized holiday packages, luxury stays, and verified outstation cabs with Ready Tours. Claim flat 10% discount on your first booking via WhatsApp.">
+<meta name="robots" content="index, follow">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+:root {
+  --bg-page: #0a0f1d;
+  --bg-surface: #111827;
+  --bg-card: #1f2937;
+  --primary-blue: #2563eb;
+  --primary-hover: #1d4ed8;
+  --accent-cyan: #06b6d4;
+  --accent-orange: #f97316;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow-lux: 0 20px 45px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+body { line-height: 1.65; }
+
+/* ========================================================
+   NAVIGATION
+   ======================================================== */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10, 15, 29, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.logo-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+}
+
+.logo span { color: var(--accent-cyan); }
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent-cyan); }
+
+.nav-btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+}
+
+/* ========================================================
+   HERO SECTION (TEXT-BASED OFFER BOX INSTEAD OF IMAGE)
+   ======================================================== */
+.hero-split {
+  padding: 130px 6% 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.hero-offer-box {
+  order: 1;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  border: 1.5px solid rgba(249, 115, 22, 0.4);
+  box-shadow: var(--shadow-lux);
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 40px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: 0.35s ease;
+}
+
+.hero-offer-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-orange);
+  box-shadow: 0 25px 50px rgba(249, 115, 22, 0.25);
+}
+
+.hero-offer-pill {
+  background: var(--accent-orange);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-offer-box h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.hero-offer-box h3 span {
+  color: var(--accent-orange);
+}
+
+.hero-offer-box p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-offer-action-btn {
+  background: #25D366;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  transition: 0.3s;
+}
+
+.hero-offer-box:hover .hero-offer-action-btn {
+  background: #20ba57;
+}
+
+.hero-text-side {
+  order: 2;
+  text-align: center;
+}
+
+.badge-tag {
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  color: #60a5fa;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.hero-text-side h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.hero-text-side h1 span {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text-side p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  align-items: center;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.highlight-item i {
+  color: var(--accent-cyan);
+  font-size: 15px;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+  color: #fff;
+  padding: 15px 36px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.5);
+}
+
+/* ========================================================
+   STATS STRIP
+   ======================================================== */
+.stats-strip-section {
+  padding: 10px 6% 35px;
+}
+
+.stats-strip {
+  max-width: 1250px;
+  margin: 0 auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  box-shadow: var(--shadow-lux);
+}
+
+.stat-cell { text-align: center; }
+.stat-cell h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-cyan);
+}
+.stat-cell p {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ========================================================
+   TOUR PACKAGES CARDS
+   ======================================================== */
+.packages-section {
+  padding: 60px 6%;
+  background: var(--bg-surface);
+}
+
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-pill-tag {
+  color: var(--accent-cyan);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-title-wrap h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.section-title-wrap p { color: var(--text-muted); font-size: 14px; }
+
+.packages-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.tour-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lux);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-blue);
+}
+
+.tour-card-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tour-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.tour-card:hover .tour-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+.tour-cat-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(17, 24, 39, 0.88);
+  backdrop-filter: blur(8px);
+  color: var(--accent-cyan);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.tour-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-card-body h3 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.tour-card-body p {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.tour-features-list {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tour-features-list li {
+  font-size: 13px;
+  color: #cbd5e1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tour-features-list li i {
+  color: var(--accent-cyan);
+  font-size: 13px;
+}
+
+.tour-action-btn {
+  text-decoration: none;
+  background: rgba(37, 99, 235, 0.12);
+  color: #60a5fa;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  transition: 0.2s;
+}
+
+.tour-action-btn:hover {
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+/* ========================================================
+   SECTION 3: 2-COLUMN SPLIT FEATURE STRIP
+   ======================================================== */
+.features-split-section {
+  padding: 60px 6%;
+  background: var(--bg-page);
+}
+
+.features-split-box {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.split-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.split-content p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.split-perks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.perk-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.perk-pill i {
+  color: var(--accent-orange);
+  font-size: 18px;
+}
+
+.perk-pill span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.split-cta-card {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1.5px solid rgba(249, 115, 22, 0.4);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: var(--shadow-lux);
+}
+
+.split-cta-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.split-cta-card h3 span { color: var(--accent-orange); }
+
+.split-cta-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.cta-white-btn {
+  text-decoration: none;
+  background: #fff;
+  color: var(--bg-page);
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.cta-white-btn:hover {
+  background: var(--accent-orange);
+  color: #fff;
+}
+
+/* ========================================================
+   SECTION 4: TIMELINE PROCESS
+   ======================================================== */
+.timeline-section {
+  padding: 60px 6%;
+  background: var(--bg-surface);
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.timeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 26px;
+  position: relative;
+  box-shadow: var(--shadow-lux);
+}
+
+.timeline-card .badge-step {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--accent-cyan);
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.timeline-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.timeline-card p {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* ========================================================
+   FAQS & COMPLIANCE
+   ======================================================== */
+.faq-section { padding: 60px 6%; background: var(--bg-page); }
+.faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.faq-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: #fff; }
+.faq-item p { color: var(--text-muted); font-size: 13.5px; line-height: 1.6; }
+
+.legal-section {
+  padding: 50px 6%;
+  background: #050811;
+  border-top: 1px solid var(--border-color);
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-container h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; color: #fff; }
+.legal-container h3:first-child { margin-top: 0; }
+.legal-container p { color: var(--text-muted); font-size: 13px; line-height: 1.7; margin-bottom: 10px; }
+
+/* ========================================================
+   REFINED FOOTER
+   ======================================================== */
+footer {
+  background: #03050a;
+  color: #fff;
+  padding: 55px 6% 25px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1250px;
+  margin: 0 auto 40px;
+}
+
+.footer-col h4 { font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #fff; }
+.footer-col p { color: #64748b; font-size: 13.5px; line-height: 1.6; }
+
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { text-decoration: none; color: #94a3b8; font-size: 13.5px; transition: 0.3s; }
+.footer-links a:hover { color: var(--accent-cyan); }
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #475569;
+  font-size: 12px;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+.float-wa {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.float-wa:hover { transform: scale(1.08); }
+
+/* ========================================================
+   RESPONSIVE QUERIES
+   ======================================================== */
+@media (min-width: 768px) {
+  .hero-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    padding: 140px 6% 60px;
+  }
+  .hero-text-side { order: 1; text-align: left; }
+  .hero-text-side h1 { font-size: 48px; }
+  .hero-text-side p { margin-left: 0; margin-right: 0; }
+  .hero-highlights { align-items: flex-start; }
+  .hero-offer-box { order: 2; max-width: 100%; }
+  
+  .stats-strip { grid-template-columns: repeat(4, 1fr); }
+  .packages-cards-grid { grid-template-columns: repeat(3, 1fr); }
+  .features-split-box { grid-template-columns: 1.1fr 0.9fr; }
+  .timeline-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+}
+
+@media (max-width: 767px) {
+  .nav-links { display: none; }
+  nav { padding: 12px 4%; }
+  .logo { font-size: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+<nav>
+  <div class="logo">
+    <div class="logo-badge">
+      <i class="fa-solid fa-earth-americas"></i>
+    </div>
+    Ready <span>Tours</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#packages">Tour Packages</a>
+    <a href="#experience">Assurance</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#legal">Policies</a>
+  </div>
+
+  <a href="#" data-wa class="nav-btn" target="_blank" rel="noopener">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Book Holiday Package</span>
+  </a>
+</nav>
+
+<!-- ========================================================
+     HERO SECTION
+     ======================================================== -->
+<section class="hero-split">
+
+  <!-- TEXT-BASED HERO OFFER BOX (Instead of image) -->
+  <a href="#" data-wa class="hero-offer-box" target="_blank" rel="noopener" title="Claim 10% Discount on WhatsApp">
+    <span class="hero-offer-pill"><i class="fa-solid fa-tags"></i> Special Welcome Offer</span>
+    <h3>Flat <span>10% OFF</span> On Your First Booking!</h3>
+    <p>Plan your dream holiday with Ready Tours. Get custom itineraries, hotel stays, and cab services with instant discount on WhatsApp inquiry.</p>
+    <div class="hero-offer-action-btn">
+      <i class="fa-brands fa-whatsapp"></i> Claim Offer on WhatsApp
+    </div>
+  </a>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-text-side">
+    <div class="badge-tag">
+      <i class="fa-solid fa-location-dot"></i>
+      Curated Domestic & International Tours
+    </div>
+
+    <h1>Discover The World With <span>Ready Tours</span></h1>
+
+    <p>Tailor-made vacation itineraries, verified luxury stays, premium outstation cabs, and complete on-trip assistance designed for memorable journeys.</p>
+
+    <div class="hero-highlights">
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Customized Family, Honeymoon & Group Tours</div>
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Verified Outstation Cabs & Airport Transfers</div>
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Flat 10% OFF on Your First Booking</div>
+    </div>
+
+    <a href="#" data-wa class="btn-primary" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      Claim 10% OFF & Plan Trip
+    </a>
+  </div>
+
+</section>
+
+<!-- ========================================================
+     STATS STRIP
+     ======================================================== -->
+<section class="stats-strip-section">
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <h3>100%</h3>
+      <p>Custom Itineraries</p>
+    </div>
+    <div class="stat-cell">
+      <h3>Flat 10%</h3>
+      <p>First Order Discount</p>
+    </div>
+    <div class="stat-cell">
+      <h3>Verified</h3>
+      <p>Hotel Network</p>
+    </div>
+    <div class="stat-cell">
+      <h3>24/7</h3>
+      <p>WhatsApp Concierge</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     TOUR PACKAGES CARDS
+     ======================================================== -->
+<section class="packages-section" id="packages">
+  <div class="section-title-wrap">
+    <span class="section-pill-tag">Featured Destinations</span>
+    <h2>Handcrafted Holiday Experiences</h2>
+    <p>Flexible itineraries curated for families, couples, and adventure travelers.</p>
+  </div>
+
+  <div class="packages-cards-grid">
+    <!-- Card 1 -->
+    <div class="tour-card">
+      <div class="tour-card-img-wrap">
+        <span class="tour-cat-badge"><i class="fa-solid fa-mountain-sun"></i> Domestic Getaways</span>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Domestic Holiday Tour Package" loading="lazy">
+      </div>
+      <div class="tour-card-body">
+        <div>
+          <h3>Himachal, Kashmir & Goa</h3>
+          <p>Complete all-inclusive holiday packages with resort stays, daily breakfasts, private sightseeing transport, and local route assistance.</p>
+          <ul class="tour-features-list">
+            <li><i class="fa-solid fa-check"></i> Quality Resort Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Private AC Vehicle for Sightseeing</li>
+            <li><i class="fa-solid fa-check"></i> Customizable Day-wise Itinerary</li>
+          </ul>
+        </div>
+        <a href="#" data-wa class="tour-action-btn" target="_blank" rel="noopener">
+          <span>Inquire Package Rates</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="tour-card">
+      <div class="tour-card-img-wrap">
+        <span class="tour-cat-badge"><i class="fa-solid fa-passport"></i> Global Escapes</span>
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="International Vacation Tour Deals" loading="lazy">
+      </div>
+      <div class="tour-card-body">
+        <div>
+          <h3>Dubai, Bali & Thailand</h3>
+          <p>Hassle-free international trips including visa consultation, airport transfers, curated city tours, and premium hotel selections.</p>
+          <ul class="tour-features-list">
+            <li><i class="fa-solid fa-check"></i> Complete Visa Guidance Support</li>
+            <li><i class="fa-solid fa-check"></i> City Excursions & Entry Passes</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Travel Coordinator</li>
+          </ul>
+        </div>
+        <a href="#" data-wa class="tour-action-btn" target="_blank" rel="noopener">
+          <span>View International Plans</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="tour-card">
+      <div class="tour-card-img-wrap">
+        <span class="tour-cat-badge"><i class="fa-solid fa-car-side"></i> Dedicated Fleet</span>
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Outstation Cabs and Chauffeur Rental" loading="lazy">
+      </div>
+      <div class="tour-card-body">
+        <div>
+          <h3>Outstation Cabs & Airport Drops</h3>
+          <p>Clean, sanitized sedans, SUVs, and luxury tempo travelers with verified chauffeurs, transparent per-KM billing, and prompt pickups.</p>
+          <ul class="tour-features-list">
+            <li><i class="fa-solid fa-check"></i> On-Time Doorstep Pickup</li>
+            <li><i class="fa-solid fa-check"></i> Verified Drivers & Clean Fleet</li>
+            <li><i class="fa-solid fa-check"></i> Clear Per-KM Transparent Pricing</li>
+          </ul>
+        </div>
+        <a href="#" data-wa class="tour-action-btn" target="_blank" rel="noopener">
+          <span>Book Instant Cab</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SECTION 3: 2-COLUMN SPLIT FEATURE STRIP
+     ======================================================== -->
+<section class="features-split-section" id="experience">
+  <div class="features-split-box">
+    <div class="split-content">
+      <h2>Why Travelers Choose Ready Tours</h2>
+      <p>We eliminate travel confusion with verified accommodations, clear pricing sheets, and direct WhatsApp concierge assistance throughout your journey.</p>
+      
+      <div class="split-perks-grid">
+        <div class="perk-pill">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Verified & Clean Hotel Partner Network</span>
+        </div>
+        <div class="perk-pill">
+          <i class="fa-solid fa-receipt"></i>
+          <span>Clear Quotes & Transparent Invoicing</span>
+        </div>
+        <div class="perk-pill">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>Direct Concierge Assistance on WhatsApp</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-cta-card">
+      <h3>Claim Your <span>10% OFF</span> Today!</h3>
+      <p>Get flat 10% discount on your first booking when you connect with us directly on WhatsApp.</p>
+      <a href="#" data-wa class="cta-white-btn" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Claim 10% Discount Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SECTION 4: TIMELINE PROCESS
+     ======================================================== -->
+<section class="timeline-section" id="how-it-works">
+  <div class="section-title-wrap">
+    <span class="section-pill-tag">Easy Process</span>
+    <h2>How Your Journey Begins</h2>
+    <p>Simple 3-step seamless process from planning to boarding.</p>
+  </div>
+
+  <div class="timeline-grid">
+    <div class="timeline-card">
+      <div class="badge-step">01</div>
+      <h3>Choose Destination</h3>
+      <p>Select your preferred location, travel dates, budget, and party size.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="badge-step">02</div>
+      <h3>WhatsApp Connect</h3>
+      <p>Message our travel specialists to automatically apply your 10% discount.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="badge-step">03</div>
+      <h3>Pack & Travel</h3>
+      <p>Receive confirmed vouchers, driver details, and continuous trip support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FAQS
+     ======================================================== -->
+<section class="faq-section" id="faq">
+  <div class="section-title-wrap">
+    <span class="section-pill-tag">Help & Clarity</span>
+    <h2>Frequently Asked Questions</h2>
+    <p>Everything you need to know about our tours, bookings, and policies.</p>
+  </div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h4>How do I get the 10% discount on my first booking?</h4>
+      <p>Simply click any WhatsApp button on this page to initiate your chat. Your 10% discount for your first order will be automatically included in your inquiry.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I customize hotel selections and day-wise itineraries?</h4>
+      <p>Yes, all our holiday packages are customizable based on your budget, hotel preference, sightseeing choices, and travel pace.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     LEGAL TERMS & POLICY COMPLIANCE
+     ======================================================== -->
+<section class="legal-section" id="legal">
+  <div class="legal-container">
+    <div class="section-title-wrap" style="text-align: left; margin-bottom: 20px;">
+      <h2>Terms, Disclaimers & Operational Policies</h2>
+    </div>
+    <h3>1. Package Availability</h3>
+    <p>Ready Tours acts as an independent travel facilitator connecting customers with verified hotels and cab operators.</p>
+    <h3>2. Promotional First Order Discount</h3>
+    <p>The flat 10% promotional discount applies specifically to the first booking made upon direct WhatsApp inquiry.</p>
+    <h3>3. Customer Privacy</h3>
+    <p>Information collected during travel inquiries is used strictly for booking confirmations and concierge support.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom:14px;color:#fff;">
+        <div class="logo-badge"><i class="fa-solid fa-earth-americas"></i></div>
+        Ready <span style="color:var(--accent-cyan);">Tours</span>
+      </div>
+      <p>Your premier destination for curated holidays, quality stays, and reliable outstation fleet management.</p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#packages">Tour Packages</a>
+        <a href="#experience">Assurance</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#legal">Disclaimers</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-links">
+        <a href="#packages">Domestic Getaways</a>
+        <a href="#packages">Global Escapes</a>
+        <a href="#packages">Outstation Cabs</a>
+        <a href="#packages">Honeymoon Specials</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Travel Desk</h4>
+      <p style="margin-bottom:8px;"><i class="fa-solid fa-phone" style="color:var(--accent-cyan);margin-right:8px;"></i> Direct Assistance</p>
+      <p style="margin-bottom:8px;"><i class="fa-brands fa-whatsapp" style="color:var(--accent-cyan);margin-right:8px;"></i> WhatsApp Active</p>
+      <p><i class="fa-solid fa-globe" style="color:var(--accent-cyan);margin-right:8px;"></i> readytours.in</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Ready Tours. All Rights Reserved. Compliant with Advertising Policies.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="#" data-wa class="float-wa" target="_blank" rel="noopener" aria-label="Contact Ready Tours on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- JAVASCRIPT LOGIC -->
+<script>
+  const phoneNumber = "+918533825543"; // Client's WhatsApp number
+  const message = encodeURIComponent("Hello! I want !D.");
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+  document.querySelectorAll("[data-wa]").forEach(function(link) {
+    link.href = whatsappUrl;
+  });
+</script>
+
+</body>
+</html>
